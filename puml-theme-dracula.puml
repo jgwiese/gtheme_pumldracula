@@ -107,8 +107,3 @@ skinparam Partition {
     basic_style()
     FontColor $PURPLE
 }
-
-'Work Breakdown Structure
-
-skinparam wbsDiagramLinecolor $GREEN
-skinparam wbsDiagramArrowLineColor $CYAN
