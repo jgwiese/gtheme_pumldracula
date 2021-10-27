@@ -1,0 +1,67 @@
+''
+'' Dracula Theme
+''
+'' Original Author: Jonas Gregor Wiese
+''
+
+!$THEME = "dracula"
+
+!$BACKGROUND = "#282a36"
+!$FOREGROUND = "#f8f8f2"
+!$CURRENT_LINE = "#44475a"
+!$COMMENT = "#6272a4"
+!$CYAN = "#8be9fd"
+!$GREEN = "#50fa7b"
+!$ORANGE = "#ffb86c"
+!$PINK = "#ff79c6"
+!$PURPLE = "#bd93f9"
+!$RED = "#ff5555"
+!$YELLOW = "#f1fa8c"
+
+
+skinparam defaultFontName "Monospace"
+skinparam BackgroundColor $BACKGROUND
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor $FOREGROUND
+skinparam FontColor $FOREGROUND
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam IconPrivate {
+  Color $RED
+}
+skinparam IconProtected {
+  Color $ORANGE
+}
+skinparam IconPublic {
+  Color $GREEN
+  BackgroundColor $GREEN
+}
+
+skinparam StereotypeCBackgroundColor $PINK
+skinparam StereotypeCBorderColor $CURRENT_LINE
+
+skinparam Note {
+    BackgroundColor $YELLOW
+    BorderColor $YELLOW
+    FontColor $COMMENT
+}
+
+skinparam Package {
+    FontColor $PURPLE
+    BorderColor $FOREGROUND
+    BackgroundColor $CURRENT_LINE
+}
+
+skinparam Class {
+    FontColor $CYAN
+    BackgroundColor $CURRENT_LINE
+
+    BorderColor $FOREGROUND
+    StereotypeFontColor $YELLOW
+    AttributeFontColor $FOREGROUND
+}
