@@ -31,7 +31,15 @@ skinparam SequenceGroupFontColor 696969
 skinparam SequenceGroupBorderColor 696969
 skinparam SequenceGroupBorderThickness 1
 
-'Class Diagram
+'General
+
+skinparam Note {
+    BackgroundColor $YELLOW
+    BorderColor $YELLOW
+    FontColor $COMMENT
+}
+
+' Class diagrams
 skinparam IconPrivate {
   Color $RED
 }
@@ -61,10 +69,8 @@ skinparam Class {
     AttributeFontColor $FOREGROUND
 }
 
-'General
-
-skinparam Note {
-    BackgroundColor $YELLOW
-    BorderColor $YELLOW
-    FontColor $COMMENT
+' Use Case diagrams
+skinparam usecase {
+    FontColor $CYAN
+    BackgroundColor $CURRENT_LINE
 }
