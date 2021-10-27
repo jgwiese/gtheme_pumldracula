@@ -31,6 +31,7 @@ skinparam SequenceGroupFontColor 696969
 skinparam SequenceGroupBorderColor 696969
 skinparam SequenceGroupBorderThickness 1
 
+'Class Diagram
 skinparam IconPrivate {
   Color $RED
 }
@@ -45,12 +46,6 @@ skinparam IconPublic {
 skinparam StereotypeCBackgroundColor $PINK
 skinparam StereotypeCBorderColor $CURRENT_LINE
 
-skinparam Note {
-    BackgroundColor $YELLOW
-    BorderColor $YELLOW
-    FontColor $COMMENT
-}
-
 skinparam Package {
     FontColor $PURPLE
     BorderColor $FOREGROUND
@@ -64,4 +59,12 @@ skinparam Class {
     BorderColor $FOREGROUND
     StereotypeFontColor $YELLOW
     AttributeFontColor $FOREGROUND
+}
+
+'General
+
+skinparam Note {
+    BackgroundColor $YELLOW
+    BorderColor $YELLOW
+    FontColor $COMMENT
 }
