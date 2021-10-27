@@ -23,16 +23,31 @@ skinparam defaultFontName "Monospace"
 skinparam BackgroundColor $BACKGROUND
 skinparam shadowing false
 skinparam RoundCorner 7
-skinparam ArrowColor $FOREGROUND
+skinparam ArrowColor $PINK
+skinparam ArrowFontColor $FOREGROUND
+
 skinparam FontColor $FOREGROUND
+'skinparam ActivityDiagramPartitionFontColor $GREEN
+'skinparam PartitionLineColor $GREEN
 skinparam SequenceLifeLineBorderColor 696969
 skinparam SequenceGroupHeaderFontColor 454645
 skinparam SequenceGroupFontColor 696969
 skinparam SequenceGroupBorderColor 696969
 skinparam SequenceGroupBorderThickness 1
 
-'General
 
+' Procedures
+!procedure font_style()
+    FontColor $CYAN
+!endprocedure
+
+!procedure basic_style()
+    BorderColor $FOREGROUND
+    BackgroundColor $CURRENT_LINE
+    font_style()
+!endprocedure
+
+' General
 skinparam Note {
     BackgroundColor $YELLOW
     BorderColor $YELLOW
@@ -63,14 +78,37 @@ skinparam Package {
 skinparam Class {
     FontColor $CYAN
     BackgroundColor $CURRENT_LINE
-
     BorderColor $FOREGROUND
+
     StereotypeFontColor $YELLOW
     AttributeFontColor $FOREGROUND
 }
 
 ' Use Case diagrams
-skinparam usecase {
-    FontColor $CYAN
-    BackgroundColor $CURRENT_LINE
+skinparam Usecase {
+    basic_style()
 }
+
+skinparam Actor {
+    basic_style()
+}
+
+' Activity diagrams
+skinparam Activity {
+    basic_style()
+    FontColor $FOREGROUND
+    Diamond {
+        basic_style()
+        FontColor $FOREGROUND
+    }
+}
+
+skinparam Partition {
+    basic_style()
+    FontColor $PURPLE
+}
+
+'Work Breakdown Structure
+
+skinparam wbsDiagramLinecolor $GREEN
+skinparam wbsDiagramArrowLineColor $CYAN
